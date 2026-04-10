@@ -1,0 +1,9 @@
+name: My First Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a build script
+        run: echo "The build is running... Project looks good!"
